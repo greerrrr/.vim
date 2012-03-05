@@ -54,3 +54,6 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
+
+map <F7> :tabp<CR>
+map <F8> :tabn<CR>
