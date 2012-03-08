@@ -1,6 +1,8 @@
 syntax on
 filetype plugin indent on
 
+set ofu=syntaxcomplete#Complete
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -54,3 +56,6 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
+
+" Clear search, i.e. remove highlighting
+com ClearSearch let @/ = "" 
