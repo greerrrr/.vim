@@ -1,10 +1,18 @@
 syntax on
 filetype plugin indent on
 
-set ofu=syntaxcomplete#Complete
-
+" pathogen plugin bundling
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+" Add vundle to runtimepath
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'godlygeek/tabular'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'yaifa.vim'
 
 " New splits occur secondary to existing
 set splitright
@@ -59,3 +67,6 @@ vmap <C-Down> xp`[V`]
 
 " Clear search, i.e. remove highlighting
 com ClearSearch let @/ = "" 
+
+" Enable dictionary
+set dictionary+=/usr/share/dict/words
