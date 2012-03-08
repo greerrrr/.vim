@@ -1,5 +1,9 @@
+set nocompatible
 syntax on
 filetype plugin indent on
+
+" Enable powerline
+set laststatus=2
 
 " pathogen plugin bundling
 call pathogen#runtime_append_all_bundles()
@@ -12,7 +16,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'yaifa.vim'
+
+Bundle 'vim-scripts/yaifa.vim'
 
 " New splits occur secondary to existing
 set splitright
@@ -50,10 +55,6 @@ set title
 "Start scrolling when cursor CLOSE to edge.
 set scrolloff=5
 
-" Source the vimrc file after saving it
-if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
-endif
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
@@ -70,3 +71,8 @@ com ClearSearch let @/ = ""
 
 " Enable dictionary
 set dictionary+=/usr/share/dict/words
+
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
