@@ -1,3 +1,3 @@
-source $HOME/.vimrc
+" source $HOME/.vimrc
 set guioptions-=T
 colorscheme slate
