@@ -13,11 +13,18 @@ call pathogen#helptags()
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
+"Vundle package manager
 Bundle 'gmarik/vundle'
+"Alignment
 Bundle 'godlygeek/tabular'
+"Statusline
 Bundle 'Lokaltog/vim-powerline'
-
+"Indenting recognizer
 Bundle 'vim-scripts/yaifa.vim'
+"Buffer display
+Bundle 'fholgado/minibufexpl.vim'
+"File browser
+Bundle 'scrooloose/nerdtree'
 
 " New splits occur secondary to existing
 set splitright
@@ -76,3 +83,18 @@ set dictionary+=/usr/share/dict/words
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
+
+" Maps Alt-[h,j,k,l] to resizing a window split
+map <silent> <A-h> <C-w><
+map <silent> <A-j> <C-W>-
+map <silent> <A-k> <C-W>+
+map <silent> <A-l> <C-w>>
+"
+" " Maps Alt-[s.v] to horizontal and vertical split respectively
+map <silent> <A-s> :split<CR>
+map <silent> <A-v> :vsplit<CR>
+"
+" " Maps Alt-[n,p] for moving next and previous window respectively
+map <silent> <A-n> <C-w><C-w>
+map <silent> <A-p> <C-w><S-w>
+
