@@ -25,6 +25,10 @@ Bundle 'vim-scripts/yaifa.vim'
 Bundle 'fholgado/minibufexpl.vim'
 "File browser
 Bundle 'scrooloose/nerdtree'
+"Auto-close brackets
+Bundle 'Townk/vim-autoclose'
+"Integrated syntax checking
+Bundle 'scrooloose/syntastic'
 
 " New splits occur secondary to existing
 set splitright
