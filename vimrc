@@ -103,9 +103,9 @@ map <silent> <A-n> <C-w><C-w>
 map <silent> <A-p> <C-w><S-w>
 
 " normalize completion popupmenu
-inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
-inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
-inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
-inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
-inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
-inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
+" inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
+" inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
+" inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
+" inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
+" inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
+" inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
